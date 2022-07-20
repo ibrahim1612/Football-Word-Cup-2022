@@ -45,13 +45,12 @@ text-decoration: none;
 }
 .banner{
     
-    margin: 33px 79px 0px 24px;
+    /* margin: 33px 79px 0px 24px; */
 }
 .banner img{
     width: 581px;
-height: 613px;
-    
-padding-left: 100px;
+height: 581px;
+
 }
 
 /* --------------------
@@ -192,7 +191,10 @@ footer hr{
 /* ----------------
     Responsive
     ---------------- */
-    @media screen and (max-width:688px) {
+/* ----------------
+    Mobile View 
+    ---------------*/
+    @media only screen and (max-width:688px) {
         header{
             width: 100%;
         }
@@ -217,4 +219,13 @@ height: 245px;
         .footer-link a, .social-link a{
             padding-top: 20px;
         }
+    }
+
+/* ----------------
+    Tab View 
+    ---------------*/
+
+    @media only screen and (min-width:689px) and (max-width:992px) {
+        
+        
     }
