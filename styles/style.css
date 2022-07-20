@@ -189,3 +189,32 @@ footer hr{
     color: #FFFFFF;
     margin-right: 20px;
 }
+/* ----------------
+    Responsive
+    ---------------- */
+    @media screen and (max-width:688px) {
+        header{
+            width: 100%;
+        }
+        .heading-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .banner img{
+            width: 233px;
+height: 245px;
+        }
+        .heading-info{
+            overflow: hidden;
+          
+            text-overflow: ellipsis;
+        }
+        main, .nav-bar, .blogs, .matches, .footer-section, .footer-link{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .footer-link a, .social-link a{
+            padding-top: 20px;
+        }
+    }
