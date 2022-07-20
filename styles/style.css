@@ -122,6 +122,37 @@ font-size: 16px;
     .blog-release{
         margin-right: 50px;
     }
+
+/* ---------------------
+    Matches Style 
+    ---------------------*/
+    .matches{
+        display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 135px;
+    grid-row-gap: 15px;
+    margin-left: 70px;
+    }
+.match{
+    width: 312px;
+height: 242px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.country{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.country span{
+    font-weight: 700;
+    font-size: 16px;
+}
 /* --------------------
     Footer Style 
     -------------------*/
