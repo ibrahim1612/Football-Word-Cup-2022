@@ -3,22 +3,23 @@
     ----------------*/
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 50px 139px 50px 140px;
 }
 
 /* ----------------
     Header style 
     ----------------*/
-    .heading{
-        margin: 111px 106px 24px;
-    }
+    
     .heading-section{
-        position: absolute;
-        width: 1321px;
-        height: 646px;
         background-color: #161616;
         border-radius: 30px;
         display: flex;
         justify-content: center;
+    }
+    .heading{
+        margin: 111px 106px;
+        display: flex;
+        flex-direction: column;
     }
 .heading-title{
     font-weight: 700;
@@ -38,16 +39,17 @@ body{
 }
 .heading-link{
     background: #DD0000;
-    width: 187px;
-height: 56px;
+    width: 127px;
 color: #FFFFFF;
 font-size: 20px;
 padding: 16px 25px;
+
 text-decoration: none;
 }
 .banner{
-    width: 581px;
-    height: 613px;
+    margin-top: 33px;
+    width: 700px;
+    position: relative;
 }
 
 /* --------------------
