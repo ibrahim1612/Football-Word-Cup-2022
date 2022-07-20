@@ -8,3 +8,51 @@ body{
 /* ----------------
     Header style 
     ----------------*/
+    .heading{
+        margin: 111px 106px 24px;
+    }
+    .heading-section{
+        position: absolute;
+        width: 1321px;
+        height: 646px;
+        background-color: #161616;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+    }
+.heading-title{
+    font-weight: 700;
+    font-size: 70px;
+    color: #FFFFFF;
+    background-color: #161616;
+    width: 531px;
+    height: 240px;
+    margin-bottom: 20px;
+
+}
+.heading-info{
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 506px;
+    height: 78px;
+}
+.heading-link{
+    background: #DD0000;
+    width: 187px;
+height: 56px;
+color: #FFFFFF;
+font-size: 20px;
+padding: 16px 25px;
+text-decoration: none;
+}
+.banner{
+    width: 581px;
+    height: 613px;
+}
+
+/* --------------------
+    Footer Style 
+    -------------------*/
+footer{
+    display: none;
+}
