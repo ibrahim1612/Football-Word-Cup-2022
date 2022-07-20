@@ -3,7 +3,7 @@
     ----------------*/
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 50px 139px 50px 140px;
+    
 }
 
 /* ----------------
@@ -11,10 +11,12 @@ body{
     ----------------*/
     
     .heading-section{
+    
         background-color: #161616;
         border-radius: 30px;
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 50px 139px 50px 140px;
     }
     .heading{
         margin: 111px 106px;
@@ -26,16 +28,12 @@ body{
     font-size: 70px;
     color: #FFFFFF;
     background-color: #161616;
-    width: 531px;
-    height: 240px;
     margin-bottom: 20px;
 
 }
 .heading-info{
     font-size: 16px;
     color: #FFFFFF;
-    width: 506px;
-    height: 78px;
 }
 .heading-link{
     background: #DD0000;
@@ -43,13 +41,17 @@ body{
 color: #FFFFFF;
 font-size: 20px;
 padding: 16px 25px;
-
 text-decoration: none;
 }
 .banner{
-    margin-top: 33px;
-    width: 700px;
-    position: relative;
+    
+    margin: 33px 79px 0px 24px;
+}
+.banner img{
+    width: 581px;
+height: 613px;
+    
+padding-left: 100px;
 }
 
 /* --------------------
