@@ -92,15 +92,26 @@ height: 30px;
     Blog style 
     ---------------------*/
 main{
-    display: flex;
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    margin: 50px 140px;
 }
 .blogs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 135px;
+    grid-row-gap: 15px;
+    margin-left: 70px;
+}
+.blog{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 2px;
 }
     .blog-info{
         display: flex;
         flex-direction: column;
+        margin-top: 15px;
     }
     .blog-info button{
         width: 100px;
@@ -119,18 +130,25 @@ font-size: 16px;
         width: 100%;
         height: 100%;
         text-align: center;
-        padding: 130px 0px;
+        padding: 100px 0px;
     }
 footer hr{
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin: 50px;
 }
-.footer-link{
-    /* padding-top: 50px; */
-}
-footer a{
+.footer-link a{
     color: #B9B9B9;
     font-size: 16px;
     margin-right: 100px;
     text-decoration: none;
+}
+.social-link{
+    font-size: 2em;
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+.social-link a{
+    color: #FFFFFF;
+    margin-right: 20px;
 }
