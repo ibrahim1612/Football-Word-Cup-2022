@@ -90,12 +90,11 @@ header {
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 10px;
-
+    border: 1px solid #E8E8E8;
 }
 
 .nav-tool a {
     color: #161616;
-
     font-size: 20px;
     padding: 17px 30px;
     font-weight: 500;
@@ -119,8 +118,9 @@ header {
 }
 
 .blog {
-    border: 1px solid #E8E8E8;
+    border: 2px solid #E8E8E8;
     border-radius: 5px;
+    box-shadow: 1px 2px #E8E8E8;
 }
 
 .blog img {
@@ -132,7 +132,6 @@ header {
     flex-direction: column;
     padding: 20px;
     align-items: flex-start;
-    width: 100%;
 }
 
 .blog-info button {
@@ -156,20 +155,20 @@ header {
 }
 
 .match {
-    width: 312px;
-    height: 242px;
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
-    padding: 5px;
+    padding: 53px 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: 2px solid #E8E8E8;
+    border-radius: 5px;
+    box-shadow: 1px 2px #E8E8E8;
 }
 
 .country {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     align-items: center;
 }
 
@@ -227,6 +226,10 @@ footer hr {
     Mobile View 
     /* ---------------*/
 @media only screen and (max-width:576px) {
+    body{
+        width: 100%;
+        margin: 0px;
+    }
     .heading-section {
         display: flex;
         flex-direction: column;
@@ -236,17 +239,20 @@ footer hr {
     .heading-title {
         font-size: 36px;
     }
-    .heading-info{
+
+    .heading-info {
         display: -webkit-box;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-overflow: hidden;
-text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
     }
-.heading-link{
-    font-size: 16px;
-}
+
+    .heading-link {
+        font-size: 16px;
+    }
+
     .main-section,
     .nav,
     .blogs,
@@ -259,7 +265,8 @@ text-overflow: ellipsis;
 
     .footer-link-a a {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         padding-top: 15px;
     }
 
@@ -273,31 +280,50 @@ text-overflow: ellipsis;
     ---------------*/
 
 @media only screen and (min-width:577px) and (max-width:992px) {
-    .heading-title {
-        font-size: 36px;
+    body{
+        width: 100%;
+        margin: 0px;
     }
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
+    .heading-section{
+        display: flex;
+        justify-items: flex-end;
+    }
+    .heading-title {
+        font-size: 26px;
+    }
+    .heading-link {
+        padding: 1px;
+        font-size: 16px;
+        
+    }
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .blogs,
-    .matches {
+    .blogs, .matches {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 5px;
     }
-
-    .nav-bar,
-    .nav {
+    .nav-bar{
         display: flex;
         flex-direction: row;
-        background-color: #fff;
+        background-color: #ffffff;
     }
 
     .viewall {
         text-align: center;
-        margin: 15px 20px;
+        margin: 30px;
+        padding: 30px;
         visibility: visible;
     }
+
+    .footer-link-a a, .social-link a{
+        margin-bottom: 25px;
+        padding-top: 20px;
+    }
+    
 
 }
