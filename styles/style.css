@@ -47,7 +47,7 @@ header {
     font-size: 20px;
     padding: 16px 25px;
     text-decoration: none;
-    border: 5px solid DD0000;
+    border: 5px solid #DD0000;
     border-radius: 5px;
 }
 
@@ -232,27 +232,20 @@ footer hr {
         font-size: 36px;
     }
 
-    /* .heading-info {
-        overflow: hidden;
-
-        text-overflow: ellipsis;
-    } */
 
     .main-section,
     .nav-bar,
     .blogs,
     .matches,
-    .footer-section,
-    .footer-link {
+    .footer-section {
         display: grid;
         grid-template-columns: 1fr;
         /* align-items: center; */
-        justify-content: center;
     }
 
-    .footer-link a,
-    .social-link a {
-        padding-top: 20px;
+    .footer-link-a a {
+        display: flex;
+        justify-content: center;
     }
 }
 
