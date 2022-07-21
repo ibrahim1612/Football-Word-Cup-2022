@@ -148,9 +148,7 @@ header {
 .matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 135px;
-    grid-row-gap: 15px;
-    margin-left: 70px;
+    gap: 24px;
 }
 
 .match {
