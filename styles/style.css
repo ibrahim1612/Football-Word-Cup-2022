@@ -9,9 +9,10 @@ body {
 /* ----------------
     Header style 
     ----------------*/
-header{
-    margin: 50px 140px; 
+header {
+    margin: 50px 140px;
 }
+
 .heading-section {
     background-color: #161616;
     border-radius: 30px;
@@ -49,10 +50,12 @@ header{
     border: 5px solid DD0000;
     border-radius: 5px;
 }
-.banner{
+
+.banner {
     width: 50%;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
     height: 100%;
 }
@@ -60,72 +63,70 @@ header{
 /* --------------------
     Middle Section 
     ---------------------*/
-    main {
-        display: grid;
-        grid-template-columns: .5fr 1.5fr;
-        margin: 50px 140px;
-    }
+main {
+
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 0px;
+}
+
 /* --------------------
     Navigation Bar
     ------------------- */
 .nav {
     background-color: #161616;
     border-radius: 10px;
-    width: 100%;
+
 }
 
 .nav-bar {
-    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    height: 100;
 }
 
 .nav-tool {
+    margin: 30px;
+    text-align: center;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin-bottom: 30px;
-    width: 252px;
-    height: 64px;
-    border: 2px solid #E8E8E8;
+    
 }
 
 .nav-tool a {
     color: #161616;
+    
     font-size: 20px;
-    padding: 17px 39px;
+    padding: 17px 30px;
     font-weight: 500;
     text-decoration: none;
-    width: 174px;
-    height: 30px;
 }
-
-
+#blog-nav{
+    background-color: red;
+}
 /* --------------------
     Blog style 
     ---------------------*/
 
 .blogs {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 135px;
-    grid-row-gap: 15px;
-    margin-left: 70px;
+    gap: 24px;
+    align-content: space-evenly;
 }
 
 .blog {
-    border: 1px solid whitesmoke;
+    border: 1px solid #E8E8E8;
     border-radius: 5px;
-    padding: 2px;
 }
 
 .blog-info {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    padding: 20px;
+    align-items: flex-start
 }
 
 .blog-info button {
@@ -267,9 +268,10 @@ footer hr {
     ---------------*/
 
 @media only screen and (min-width:689px) and (max-width:992px) {
-    .heading-title{
+    .heading-title {
         font-size: 24px;
     }
+
     main {
         display: grid;
         grid-template-columns: 1fr;
