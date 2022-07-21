@@ -90,6 +90,24 @@ header {
     padding: 10px;
 }
 
+/* animation */
+@keyframes bc-color {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: powderblue;
+    }
+}
+
+.heading-section:hover {
+    background-color: black;
+    animation-name: bc-color;
+    animation-duration: 4s;
+    animation-delay: .3s;
+}
+
 /* --------------------
     Navigation Bar
     ------------------- */
