@@ -63,13 +63,13 @@ header {
 /* --------------------
     Middle Section 
     ---------------------*/
-main {
+.main-section {
 
     display: grid;
     grid-template-columns: .5fr .5fr;
     align-items: start;
     justify-content: space-evenly;
-    gap: 0px;
+
 }
 
 /* --------------------
@@ -91,20 +91,22 @@ main {
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 10px;
-    
+
 }
 
 .nav-tool a {
     color: #161616;
-    
+
     font-size: 20px;
     padding: 17px 30px;
     font-weight: 500;
     text-decoration: none;
 }
-#blog-nav{
+
+#blog-nav {
     background-color: red;
 }
+
 /* --------------------
     Blog style 
     ---------------------*/
@@ -224,7 +226,7 @@ footer hr {
     ---------------- */
 /* ----------------
     Mobile View 
-    ---------------*/
+    /* ---------------*/
 @media only screen and (max-width:688px) {
     header {
         width: 100%;
