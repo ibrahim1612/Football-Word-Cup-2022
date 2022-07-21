@@ -236,7 +236,17 @@ footer hr {
     .heading-title {
         font-size: 36px;
     }
+    .heading-info{
+        display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
 
+    }
+.heading-link{
+    font-size: 16px;
+}
     .main-section,
     .nav,
     .blogs,
@@ -262,7 +272,10 @@ footer hr {
     Tab View 
     ---------------*/
 
-@media only screen and (min-width:689px) and (max-width:992px) {
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .heading-title {
+        font-size: 36px;
+    }
     main {
         display: grid;
         grid-template-columns: 1fr;
